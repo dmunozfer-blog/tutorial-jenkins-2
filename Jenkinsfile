@@ -16,7 +16,7 @@ node {
    // -- Descarga código desde SCM
    echo 'Descargando código de SCM'
    sh 'rm -rf *'
-   git url: 'https://github.com/dmunozfer/dmunozfer.es-tutorial-jenkins-2.git'
+   checkout scm
    
    // -- Compilando
    echo 'Compilando aplicación'
